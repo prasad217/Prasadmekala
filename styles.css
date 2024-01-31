@@ -1,0 +1,539 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+meta {
+    content: width=device-width, initial-scale=1.0;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #333;
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive Navigation Styles */
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust the top position based on your design */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+.menu-btn:checked + .nav-links {
+    display: flex;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #333; /* Same color as the whole screen */
+    overflow: hidden;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    margin: 0;
+    font-size: 32px;
+    background: linear-gradient(to right, #ff6600 50%, white 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
+
+.social-icons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-left: 1px;
+}
+
+.icon img {
+    width: 28px;
+    height: 28px;
+}
+
+nav a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+    touch-action: manipulation;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+nav a:hover::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background: #ffd700; /* Golden color */
+    box-shadow: 0 0 10px #ffd700; /* Golden glow effect */
+    transition: box-shadow 0.3s ease;
+}
+
+
+/* Content Styles */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff; /* Set the background color for the content */
+
+}
+
+/* Text Animation Styles */
+.text-animation-container {
+    height: 40px; /* Adjust the height based on your design */
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  .text-animation {
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+ .names{
+    font-size: 40px ;
+    color: black;
+ }
+
+  
+  .intro {
+    font-size: 45px;
+    margin-bottom: 5px;
+    color: red;
+  }
+  
+  .name {
+    font-size: 40px;
+  }
+  
+  .cursor {
+    display: inline-block;
+    width: 8px; /* Adjust the width of the cursor */
+    height: 18px; /* Adjust the height of the cursor */
+    background-color: #ff6600; /* Cursor color */
+    vertical-align: text-bottom; /* Align cursor with text */
+    animation: blink 0.8s steps(1) infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      visibility: hidden;
+    }
+  }
+  .cv-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd700; /* Golden color */
+    color: #333; /* Text color */
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #e5bb00; /* Darker shade for hover effect */
+}
+
+  
+.image-container {
+    position: relative;
+    margin-left: 0; /* Set margin-left to 0 to align with the left edge */
+    width: 50vw; /* Set width to 100vw to cover the entire width of the viewport */
+    height: 100%;
+    background: none; /* Remove the background color */
+    margin-top: 0px; /* Adjust the margin-top to move images down */
+}
+
+.pic {
+    position: absolute;
+    top: 20px; /* Adjust the top position to move the background image down */
+    left: 0;
+    width: 100%; /* Set width to 100% to cover the entire width of the container */
+    height: 100%;
+    object-fit: cover;
+    /* Remove z-index or set it to a positive value if necessary */
+}
+
+.profilepic {
+    width: 150%; /* Adjust the width to make the profile image even larger */
+    height: auto;
+    transform-style: preserve-3d;
+    animation: zoomInOut 5s ease-in-out infinite;
+    margin-top: 0px; /* Adjust the margin-top to move the profile image down */
+    margin-left: -25%; /* Adjust the margin-left to extend beyond the left edge */
+    margin-bottom: 180px;
+}
+
+
+@keyframes zoomInOut {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* About Me Section Styles */
+/* Add these styles for the "About Me" section */
+.about-me.transitioning {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    transition: opacity 0.5s, transform 0.5s;
+}
+.about-me {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.about-me.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Add keyframes animation for revealing from left to right */
+@keyframes revealFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.about-me.reveal {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* Back to the original state */
+}
+
+.about-me h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: flex-start; /* Align the content to the top */
+    text-align: left;
+}
+
+.about-image-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.about-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    z-index: -1; /* Ensure the background is behind other content */
+}
+
+.about-image {
+    width: 80%;
+    height: 80%;
+    border-radius: 8px;
+    margin-left: 3px;
+}
+
+
+.about-text {
+    flex: 1; /* Allow the text to grow and take available space */
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        align-items: center; /* Center the content vertically on smaller screens */
+    }
+
+    .about-image-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.about-me.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+}
+
+  
+  
+
+/* Add this to your CSS file */
+/* Add this to your CSS file */
+
+.skill {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.8); /* Initially compressed and moved up */
+    transition: opacity 0.5s, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1); /* Use cubic-bezier for a jelly-like effect */
+}
+
+.skill.reveal {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* Back to original state */
+}
+
+.skill-category {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.skill.reveal .skill-category {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+.skill-category h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hea {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.skills-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.skill-category {
+    text-align: center;
+}
+
+.logo-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row; /* Display logos and text horizontally */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping of items to the next line */
+}
+
+.logo-list li {
+    margin: 0 10px;
+    text-align: center;
+    position: relative;
+}
+
+.logo-list img {
+    margin-bottom: 5px;
+    width: 100px;
+    height: auto;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 20px rgba(255, 223, 0, 1);
+    }
+    100% {
+        box-shadow: 0 0 0 rgba(255, 223, 0, 0);
+    }
+}
+
+.sec {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.exp {
+    width: 55%;
+}
+
+.db {
+    width: 150px;
+}
+
+
+/*project section*/
+
+.projects {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Gap between projects */
+    justify-content: center;
+}
+
+.project {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.project-title {
+    font-size: 24px;
+    color: #333;
+}
+
+.project-description {
+    font-size: 16px;
+    color: #666;
+}
+
+.project-small-image{
+    width: 3%;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .project {
+    background-color: smokewhite;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    cursor: pointer;
+  }
+  
+  .expanded {
+    flex-grow: 2; /* Expand the selected project */
+  }
+  
+  .project-small {
+    flex-grow: 0.5; /* Shrink other projects */
+  }
+  
+  .project-small-image {
+    width: 20px;
+  }
+  
+  .project:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  .card {
+    max-width: 600px; /* Set a maximum width for the card */
+    margin: 0 auto; /* Center the card */
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  #form {
+    width: 100%;
+  }
+  
+ /* styles.css */
+
+.find-me-on {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .find-me-on h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .social-icon img {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+  }
+  
+  .social-icon:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+.rand{
+    color: black;
+}  
+.rando{
+    color: orangered
+}
+

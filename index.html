@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <h1 class="logo">Portfolio</h1>
+      <div class="social-icons">
+        <a href="mailto:prasadmekala127@gmail.com" class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/128/2965/2965306.png" alt="Email" />
+        </a>
+        <a href="https://github.com/prasad217" target="_blank" class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/128/270/270798.png" alt="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/prasad-mani-84b9b5241/" target="_blank" class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/128/2504/2504923.png" alt="LinkedIn" />
+        </a>
+      </div>
+      <a href="#home" class="right">Home</a>
+      <a href="#about" class="right">About</a>
+      <a href="#skills" class="right">Skills</a>
+      <a href="#projects" class="right">Projects</a>
+    </nav>
+    
+    <section id="home">
+    <div class="main-content">
+      <!-- Text Animation Section -->
+      <div class="text-animation">
+        <h1 class="intro">Hello,</h1>
+        <h1 class="names">I am Prasad</h1>
+        <p class="name">Student | Developer <span class="cursor">|</span></p>
+        <p class="para">
+          As an aspiring Full-Stack Developer, I'm a dedicated undergraduate
+          seeking <br />
+          opportunities to enhance web experiences. With a passion for coding
+          and <br />
+          innovation, I bring a blend of academic knowledge and hands-on
+          skills,<br />
+          poised for dynamic contributions in the field.
+        </p>
+        <div class="butt">
+          <a href="images/cv.pdf" target="_blank" class="cv-button">Download CV</a>
+        </div>
+      </div>
+      <!-- Image Section -->
+      <div class="image-container">
+        <img class="pic" src="images/bg1.png" alt="Your Background Image" />
+        <img class="profilepic" src="images/profile2.png" alt="Your Image" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div id="about-me" class="about-me">
+      <h2>About Me</h2>
+      <div class="about-content">
+     
+        <div style="text-align: center; background-color: #f4f4f4; border-radius: 8px; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+          <h2 style="font-size: 36px; color: #333; margin-bottom: 20px;">Hello, I'm Prasada Mani Mekala</h2>
+          <p style="font-size: 18px; color: #666; line-height: 1.6;">
+            An undergraduate student pursuing B.Tech in Computer Science at SRM Institute of Science and Technology. My passion lies in full-stack web development, and I have a solid foundation in front-end technologies like HTML, CSS, and JavaScript. I specialize in building dynamic and responsive user interfaces using React.js, a powerful JavaScript library.
+          </p>
+          <p style="font-size: 18px; color: #666; line-height: 1.6;">
+            On the back end, I'm familiar with technologies like Node.js and Express, allowing me to create seamless and efficient web applications. I'm always eager to explore new technologies and best practices to enhance my skills and deliver high-quality solutions.
+          </p>
+          <p style="font-size: 18px; color: #666; line-height: 1.6;">
+            Beyond the realm of coding, I derive immense joy from savoring the simple yet profound moments spent sharing a cup of coffee with my cherished parents. In my steadfast belief in the significance of a well-rounded and holistic approach to life and learning, I find solace and inspiration in these moments of familial connection.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section id="skills">
+    <div class="skill">
+      <h2 class="hea">Skills</h2>
+      <div class="skills">
+        <div class="skill-category">
+          <h3 class="sec">Frontend:</h3>
+          <ul class="logo-list">
+            <li>
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/5968/5968267.png"
+                alt="HTML Logo"
+              />
+              <p>HTML</p>
+            </li>
+            <li>
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/5968/5968242.png"
+                alt="CSS Logo"
+              />
+              <p>CSS</p>
+            </li>
+            <li>
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
+                alt="JavaScript Logo"
+              />
+              <p>JavaScript</p>
+            </li>
+            <li>
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/753/753244.png"
+                alt="React Logo"
+              />
+              <p>React.js</p>
+            </li>
+            <!-- Add more logos if needed -->
+          </ul>
+          <h3 class="sec">Back-end:</h3>
+          <ul class="logo-list">
+            <li>
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/919/919825.png"
+              />
+              <p>Node.js.js</p>
+            </li>
+            <li>
+              <img class="exp" src="images/exp.png" />
+              <p>Express.js</p>
+            </li>
+          </ul>
+
+          <h3 class="sec">Database Management</h3>
+          <ul class="logo-list">
+            <li>
+              <img class="db" src="images/sql.png" />
+              <p>SQL</p>
+            </li>
+            <li>
+              <img class="db" src="images/my.png" />
+              <p>MySQL</p>
+            </li>
+            <li>
+              <img class="db" src="images/mon.png" />
+              <p>MongoDB</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="projects">
+      <h2 class="project-heading">Projects</h2>
+      <div class="project-grid">
+        <div class="project" onclick="expandProject(this)">
+        <div class="project">
+          <h3 class="project-title">
+            <a href="https://prasad217.github.io/Quickqr_Generator/">
+              QR-Code Generator
+              <img src="https://cdn-icons-png.flaticon.com/128/7794/7794669.png" alt="Small Image" class="project-small-image">
+            </a>
+          </h3>
+
+          <p class="project-description">
+            Unleash the power of my React.js-based QR-Code Generator, a solo
+            project packed with robust features. Craft and download QR codes
+            seamlessly, supporting diverse data types like URLs and contact
+            details. It goes beyond by storing your code history in local
+            storage for easy management. With a user-friendly interface, this
+            tool streamlines the process of generating QR codes, making it a
+            must-have for efficient information sharing. Elevate your QR code
+            creation experience with my responsive and feature-rich QR-Code
+            Generator, designed exclusively for your personal portfolio.
+          </p>
+
+          <!-- You can add more details like project images, links, etc. -->
+        </div>
+      </div>
+
+        <div class="project">
+          <div class="project" onclick="expandProject(this)">
+          <h3 class="project-title">
+            <a href="https://prasad217.github.io/Quickqr_Generator/">
+              MOVIE RECOMMENDATION WEBSITE
+              <img src="https://cdn-icons-png.flaticon.com/128/7794/7794669.png" alt="Small Image" class="project-small-image">
+            </a>
+          </h3>
+            I created an innovative movie recommendation site where users
+            receive personalized movie suggestions tailored to their interests.
+            Leveraging advanced techniques such as cosine similarity and cosine
+            distance, the project employs Python, pandas, and NumPy to analyze
+            user preferences and recommend films that align with their viewing
+            history. The system's foundation on these principles ensures precise
+            and efficient movie recommendations, enhancing the overall user
+            experience
+          </p>
+         
+        </div>
+        </div>
+
+        <div class="project">
+          <div class="project" onclick="expandProject(this)">
+          <h3 class="project-title">
+            <a href="https://prasad217.github.io/Contact_MANAGER/">
+              CONTACT MANAGER
+              <img src="https://cdn-icons-png.flaticon.com/128/7794/7794669.png" alt="Small Image" class="project-small-image">
+            </a>
+          </h3>
+          <p class="project-description">
+            Contact Manager is an innovative React-based application designed to streamline contact management. This feature-rich platform allows users to efficiently store and organize contact information while offering seamless integration for direct calls and emails. By leveraging React's dynamic capabilities, the application enhances user experience by providing a comprehensive solution for managing and communicating with contacts, optimizing communication workflows for enhanced productivity and convenience.
+          </p>
+
+         
+        </div>
+      </div>
+
+        <div class="project">
+          <div class="project" onclick="expandProject(this)">
+          <h3 class="project-title">
+            <a href="https://prasad217.github.io/TypeWizardry/">
+              TYPING WEBSITE
+              <img src="https://cdn-icons-png.flaticon.com/128/7794/7794669.png" alt="Small Image" class="project-small-image">
+            </a>
+          </h3>
+          <p class="project-description">
+            Type Wizardry is an engaging typing platform crafted with JavaScript and HTML, designed to elevate users' typing proficiency. This website combines the dynamic capabilities of JavaScript with the structure of HTML to create an interactive and user-friendly typing experience. With a focus on enhancing typing skills, Type Wizardry offers an intuitive interface, real-time feedback, and various typing challenges, making it an effective tool for users looking to improve their typing speed and accuracy.
+          </p>
+
+        <!-- Repeat the above structure for the remaining projects -->
+      </div>
+    </div>
+    </div>
+  </section>
+    <section class="find-me-on">
+      <h2>Find Me On</h2>
+      <p class="rand">Stay Connected.<span class=rando> Let's make things happen!</p>
+      <div class="social-icons">
+        <a href="https://github.com/prasad217" target="_blank" class="social-icon">
+          <img src="https://cdn-icons-png.flaticon.com/128/270/270798.png" alt="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/prasad-mani-84b9b5241/" target="_blank" class="social-icon">
+          <img src="https://cdn-icons-png.flaticon.com/128/2504/2504923.png" alt="LinkedIn" />
+        </a>
+        <a href="https://www.instagram.com/prasad_mekala217/" target="_blank" class="social-icon">
+          <img src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png" alt="nstagram" />
+        </a>
+      </div>
+    </section>
+
+  </body>
+</html>
